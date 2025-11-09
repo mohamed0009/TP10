@@ -113,19 +113,19 @@ The application follows the **Repository Pattern** and **MVC** architecture:
 ## Screenshots
 
 ### Backend Spring Boot API
-![Backend-Spring](app/Screen/Backend-Spring.png)
+![Backend-Spring](app/Screen/image.png)
 *RESTful API backend showing account management endpoints*
 
 ### Add New Account
-![Ajouter-Compte](app/Screen/Ajouter-Compte.png)
+![Ajouter-Compte](app/Screen/image1.png)
 *Dialog for creating a new bank account with balance and type selection*
 
 ### Update Account
-![Modifier-Compte](app/Screen/Modifier-Compte.png)
+![Modifier-Compte](app/Screen/image2.png)
 *Edit existing account details with pre-populated form*
 
 ### Delete Account
-![Supprimer-Compte](app/Screen/Supprimer-Compte.png)
+![Supprimer-Compte](app/Screen/image3.png)
 *Confirmation dialog before deleting an account*
 
 ## Technologies

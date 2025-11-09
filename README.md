@@ -52,7 +52,7 @@ The application showcases modern Android development practices including:
 
 ## Architecture
 
-## 🏗️ Architecture
+##  Architecture
 
 The application follows the **Repository Pattern** and **MVC** architecture:
 
@@ -113,20 +113,16 @@ The application follows the **Repository Pattern** and **MVC** architecture:
 ## Screenshots
 
 ### Backend Spring Boot API
-![Backend-Spring](app/Screen/image.png)
-*RESTful API backend showing account management endpoints*
+![Backend-Spring](./app/Screen/image.png)
 
 ### Add New Account
-![Ajouter-Compte](app/Screen/image1.png)
-*Dialog for creating a new bank account with balance and type selection*
+![Ajouter-Compte](./app/Screen/image1.png)
 
 ### Update Account
-![Modifier-Compte](app/Screen/image2.png)
-*Edit existing account details with pre-populated form*
+![Modifier-Compte](./app/Screen/image2.png)
 
 ### Delete Account
-![Supprimer-Compte](app/Screen/image3.png)
-*Confirmation dialog before deleting an account*
+![Supprimer-Compte](./app/Screen/image3.png)
 
 ## Technologies
 

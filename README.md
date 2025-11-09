@@ -1,16 +1,9 @@
 
-# 🏦 Bank Account Management - Android REST Client
+# Bank Account Management - Android REST Client
 
-[![Android](https://img.shields.io/badge/Platform-Android-green.svg)](https://developer.android.com/)
-[![Java](https://img.shields.io/badge/Language-Java-orange.svg)](https://www.java.com/)
-[![Retrofit](https://img.shields.io/badge/Library-Retrofit-blue.svg)](https://square.github.io/retrofit/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+A modern Android application for managing bank accounts with full CRUD operations, supporting both JSON and XML data formats through a RESTful API integration.
 
-A modern Android application for managing bank accounts with full CRUD operations, supporting both **JSON** and **XML** data formats through a RESTful API integration.
-
----
-
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -27,11 +20,9 @@ A modern Android application for managing bank accounts with full CRUD operation
 - [License](#license)
 - [Author](#author)
 
----
+## Overview
 
-## 🎯 Overview
-
-This Android application demonstrates a complete implementation of the **Repository Pattern** with **Retrofit** for consuming RESTful web services. It provides an intuitive interface for managing bank accounts with support for multiple account types (Current/Checking and Savings accounts).
+This Android application demonstrates a complete implementation of the Repository Pattern with Retrofit for consuming RESTful web services. It provides an intuitive interface for managing bank accounts with support for multiple account types (Current/Checking and Savings accounts).
 
 The application showcases modern Android development practices including:
 - Clean architecture with separation of concerns
@@ -40,28 +31,26 @@ The application showcases modern Android development practices including:
 - Dynamic data format switching (JSON/XML)
 - Professional error handling and user feedback
 
----
-
-## ✨ Features
+## Features
 
 ### Core Functionality
-- ✅ **View All Accounts** - Display comprehensive list of bank accounts
-- ➕ **Add Account** - Create new accounts with balance and type selection
-- ✏️ **Update Account** - Modify existing account details
-- 🗑️ **Delete Account** - Remove accounts with confirmation dialog
-- 🔄 **Format Switching** - Toggle between JSON and XML data formats in real-time
-- 📱 **Material Design** - Modern, intuitive user interface
-- ⚡ **Real-time Updates** - Automatic list refresh after operations
+- View All Accounts - Display comprehensive list of bank accounts
+- Add Account - Create new accounts with balance and type selection
+- Update Account - Modify existing account details
+- Delete Account - Remove accounts with confirmation dialog
+- Format Switching - Toggle between JSON and XML data formats in real-time
+- Material Design - Modern, intuitive user interface
+- Real-time Updates - Automatic list refresh after operations
 
 ### Account Types
-- **COURANT** (Current/Checking Account)
-- **EPARGNE** (Savings Account)
+- COURANT (Current/Checking Account)
+- EPARGNE (Savings Account)
 
 ### Data Formats
-- **JSON** - Using Gson converter
-- **XML** - Using SimpleXML converter
+- JSON - Using Gson converter
+- XML - Using SimpleXML converter
 
----
+## Architecture
 
 ## 🏗️ Architecture
 
@@ -121,9 +110,7 @@ The application follows the **Repository Pattern** and **MVC** architecture:
 3. **ViewHolder Pattern** - `CompteAdapter.CompteViewHolder` for efficient RecyclerView
 4. **Callback Pattern** - Asynchronous API response handling
 
----
-
-## 📸 Screenshots
+## Screenshots
 
 ### Backend Spring Boot API
 ![Backend-Spring](app/Screen/Backend-Spring.png)
@@ -141,9 +128,7 @@ The application follows the **Repository Pattern** and **MVC** architecture:
 ![Supprimer-Compte](app/Screen/Supprimer-Compte.png)
 *Confirmation dialog before deleting an account*
 
----
-
-## 🛠️ Technologies
+## Technologies
 
 ### Android Framework
 - **Platform**: Android 8.0+ (API 26+)
@@ -166,28 +151,26 @@ The application follows the **Repository Pattern** and **MVC** architecture:
 - Endpoints: `/api/comptes`
 - Supports both JSON and XML content negotiation
 
----
-
-## 📋 Prerequisites
+## Prerequisites
 
 Before running this application, ensure you have:
 
 ### Development Environment
-- ✅ **Android Studio** Arctic Fox (2020.3.1) or newer
-- ✅ **JDK 11** or higher
-- ✅ **Android SDK** API Level 26+
-- ✅ **Gradle** 7.0+
+- Android Studio Arctic Fox (2020.3.1) or newer
+- JDK 11 or higher
+- Android SDK API Level 26+
+- Gradle 7.0+
 
 ### Backend Setup
-- ✅ **Spring Boot Backend** running on port 8082
-- ✅ Backend must be accessible at `http://10.0.2.2:8082/` (Android emulator)
+- Spring Boot Backend running on port 8082
+- Backend must be accessible at `http://10.0.2.2:8082/` (Android emulator)
   - For physical devices, update `BASE_URL` in `RetrofitClient.java` to your machine's IP
 
 ### Testing Environment
-- ✅ **Android Emulator** (API 26+) or
-- ✅ **Physical Android Device** with USB debugging enabled
+- Android Emulator (API 26+) or
+- Physical Android Device with USB debugging enabled
 
----
+## Installation
 
 ## 📥 Installation
 
@@ -231,9 +214,7 @@ dependencies {
 ./gradlew clean build
 ```
 
----
-
-## ⚙️ Configuration
+## Configuration
 
 ### Backend URL Configuration
 
@@ -263,11 +244,9 @@ Ensure cleartext traffic is allowed for development:
 </network-security-config>
 ```
 
-⚠️ **Warning**: Disable cleartext traffic in production and use HTTPS!
+**Warning**: Disable cleartext traffic in production and use HTTPS!
 
----
-
-## 🚀 Usage
+## Usage
 
 ### Running the Application
 
@@ -296,7 +275,7 @@ adb shell am start -n ma.projet.restclient/.MainActivity
 - List automatically refreshes when format changes
 
 #### 3. **Add New Account**
-- Tap the **Floating Action Button** (➕)
+- Tap the **Floating Action Button** (+)
 - Enter account details:
   - **Balance**: Numeric value (e.g., 1000.00)
   - **Type**: Select COURANT or EPARGNE
@@ -304,18 +283,16 @@ adb shell am start -n ma.projet.restclient/.MainActivity
 - List refreshes automatically
 
 #### 4. **Update Account**
-- Tap the **Edit button** (✏️) on any account
+- Tap the **Edit button** on any account
 - Modify balance or type
 - Tap **"Modifier"** to save changes
 
 #### 5. **Delete Account**
-- Tap the **Delete button** (🗑️) on any account
+- Tap the **Delete button** on any account
 - Confirm deletion in the dialog
 - Account is removed and list refreshes
 
----
-
-## 📡 API Documentation
+## API Documentation
 
 ### Base URL
 ```
@@ -407,9 +384,7 @@ Content-Type: application/json
 DELETE /api/comptes/{id}
 ```
 
----
-
-## 📂 Project Structure
+## Project Structure
 
 ```
 app/
@@ -447,9 +422,7 @@ app/
 └── proguard-rules.pro                         # ProGuard configuration
 ```
 
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -483,9 +456,7 @@ git checkout -b feature/your-feature-name
 - Use **meaningful variable names**
 - Add **error handling** for API calls
 
----
-
-## 📄 License
+## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
@@ -501,30 +472,19 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software...
 ```
 
----
-
-## 👨‍💻 Author
+## Author
 
 **Mohamed**  
 GitHub: [@mohamed0009](https://github.com/mohamed0009)
 
-### Contact
-- 📧 Email: [Your Email]
-- 💼 LinkedIn: [Your LinkedIn]
-- 🐦 Twitter: [@YourTwitter]
-
----
-
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Retrofit** team for the excellent HTTP client library
 - **Google** for Android development tools and Material Design
 - **Spring Boot** community for backend framework
 - **SimpleXML** for XML parsing capabilities
 
----
-
-## 🔮 Future Enhancements
+## Future Enhancements
 
 - [ ] Implement local caching with Room database
 - [ ] Add authentication and user management
@@ -537,24 +497,14 @@ GitHub: [@mohamed0009](https://github.com/mohamed0009)
 - [ ] Biometric authentication
 - [ ] Export data to PDF/CSV
 
----
-
-## 📝 Changelog
+## Changelog
 
 ### Version 1.0.0 (2025-11-09)
-- ✨ Initial release
-- ✅ CRUD operations for bank accounts
-- ✅ JSON and XML format support
-- ✅ Material Design UI
-- ✅ Repository pattern implementation
-- ✅ Comprehensive documentation
+- Initial release
+- CRUD operations for bank accounts
+- JSON and XML format support
+- Material Design UI
+- Repository pattern implementation
+- Comprehensive documentation
 
----
-
-<div align="center">
-
-**⭐ If you find this project helpful, please give it a star! ⭐**
-
-Made with ❤️ by Mohamed
-
-</div>
+Made with care by Mohamed
